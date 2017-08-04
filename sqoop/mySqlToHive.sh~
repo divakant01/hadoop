@@ -1,0 +1,1 @@
+sqoop import --connect jdbc:mysql://localhost:3306/sqoop_demo --driver com.mysql.jdbc.Driver --username root --password cloudera --target-dir /user/cloudera/sqoop_import --table orc --fields-terminated-by "," --hive-import --create-hive-table --hive-table sqoop_mysql_import
